@@ -1,8 +1,0 @@
-[
-  {
-    "remote": "github",
-    "repository": "TwixTeam/android_vendor_lge_hammerhead",
-    "target_path": "vendor/lge/hammerhead",
-    "revision": "kitkat"
-  }
-]

@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-# Inherit Twix GSM telephony parts
+# Inherit Hazy GSM telephony parts
 $(call inherit-product, vendor/twixkat/configs/gsm.mk)
 
 # Sample: This is where we'd set a backup provider if we had one
@@ -26,12 +26,12 @@ PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from our Twix product configuration
+# Inherit from our Hazy product configuration
 $(call inherit-product, vendor/twixkat/configs/common.mk)
 
-PRODUCT_NAME := twix_hammerhead
+PRODUCT_NAME := hazy_hammerhead
 PRODUCT_DEVICE := hammerhead
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
