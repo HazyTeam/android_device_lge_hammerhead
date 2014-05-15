@@ -29,6 +29,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from our Hazy product configuration
 $(call inherit-product, vendor/twixkat/configs/common.mk)
 
+PRODUCT_PACKAGES += \
+    Launcher3
+
 PRODUCT_NAME := hazy_hammerhead
 PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := Google
