@@ -39,5 +39,10 @@ PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Kernel inline build
+TARGET_KERNEL_CONFIG := hammerhead_defconfig
+TARGET_VARIANT_CONFIG := hammerhead_defconfig
+TARGET_SELINUX_CONFIG := hammerhead_defconfig
+
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
