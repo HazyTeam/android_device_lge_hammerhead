@@ -40,6 +40,7 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Kernel inline build
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := hammerhead_defconfig
 TARGET_VARIANT_CONFIG := hammerhead_defconfig
 TARGET_SELINUX_CONFIG := hammerhead_defconfig
