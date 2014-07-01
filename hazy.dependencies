@@ -1,13 +1,13 @@
 [
   {
     "remote": "github",
-    "repository": "HazyTeam/android_vendor_lge_hammerhead",
+    "repository": "KylinRom/android_vendor_lge_hammerhead",
     "target_path": "vendor/lge/hammerhead",
     "revision": "kitkat"
   },
   {
     "remote": "github",
-    "repository": "HazyTeam/android_kernel_lge_hammerhead",
+    "repository": "AOSPA/android_kernel_lge_hammerhead",
     "target_path": "kernel/lge/hammerhead",
     "revision": "kitkat"
   }
