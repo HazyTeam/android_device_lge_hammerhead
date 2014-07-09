@@ -47,3 +47,6 @@ TARGET_SELINUX_CONFIG := paranoid_hammerhead_defconfig
 
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
+
+# Inherit from our Hazy vendor product
+$(call inherit-product, vendor/twixkat/device-partial.mk)
