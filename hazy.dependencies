@@ -7,7 +7,7 @@
   },
   {
     "remote": "github",
-    "repository": "AOSPA/android_kernel_lge_hammerhead",
+    "repository": "HazyTeam/android_kernel_lge_hammerhead",
     "target_path": "kernel/lge/hammerhead",
     "revision": "kitkat"
   }
