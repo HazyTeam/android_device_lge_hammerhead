@@ -15,7 +15,7 @@
 #
 
 # Inherit Hazy GSM telephony parts
-$(call inherit-product, vendor/twixkat/configs/gsm.mk)
+$(call inherit-product, vendor/hazy/configs/gsm.mk)
 
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from our Hazy product configuration
-$(call inherit-product, vendor/twixkat/configs/common.mk)
+$(call inherit-product, vendor/hazy/configs/common.mk)
 
 PRODUCT_PACKAGES += \
     Launcher3
@@ -49,4 +49,4 @@ $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/hammerhead-vendor.mk)
 
 # Inherit from our Hazy vendor product
-$(call inherit-product, vendor/twixkat/device-partial.mk)
+$(call inherit-product, vendor/hazy/device-partial.mk)
