@@ -1,7 +1,7 @@
 [
   {
     "remote": "github",
-    "repository": "KylinRom/android_vendor_lge_hammerhead",
+    "repository": "HazyTeam/android_vendor_lge_hammerhead",
     "target_path": "vendor/lge/hammerhead",
     "revision": "hazypop"
   },
