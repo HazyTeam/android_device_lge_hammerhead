@@ -1,14 +1,8 @@
 [
   {
     "remote": "github",
-    "repository": "HazyTeam/android_vendor_lge_hammerhead",
-    "target_path": "vendor/lge/hammerhead",
-    "revision": "hazypop"
-  },
-  {
-    "remote": "github",
-    "repository": "HazyTeam/android_kernel_lge_hammerhead",
-    "target_path": "kernel/lge/hammerhead",
+    "repository": "HazyTeam/proprietary_vendor_lge",
+    "target_path": "vendor/lge",
     "revision": "hazypop"
   }
 ]
