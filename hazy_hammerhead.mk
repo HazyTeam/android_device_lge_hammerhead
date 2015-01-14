@@ -40,10 +40,10 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Kernel inline build
-#TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-#TARGET_KERNEL_CONFIG := hazy_hammerhead_defconfig
-#TARGET_VARIANT_CONFIG := hazy_hammerhead_defconfig
-#TARGET_SELINUX_CONFIG := hazy_hammerhead_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CONFIG := hazy_hammerhead_defconfig
+TARGET_VARIANT_CONFIG := hazy_hammerhead_defconfig
+TARGET_SELINUX_CONFIG := hazy_hammerhead_defconfig
 
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/hammerhead-vendor.mk)
