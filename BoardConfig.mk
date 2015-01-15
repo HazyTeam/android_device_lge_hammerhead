@@ -16,10 +16,10 @@
 
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_SMP := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Krait optimizations
 TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
@@ -36,6 +36,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=hammerhead user_debug=31 maxcpus=2 msm_watchdog_v2.enable=1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -115,6 +116,10 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
+# Define kernel config for inline building
+TARGET_KERNEL_CONFIG := crdroid_hammerhead_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
        app.te \
@@ -124,6 +129,7 @@ BOARD_SEPOLICY_UNION += \
        device.te \
        domain.te \
        file.te \
+       healthd.te \
        hostapd.te \
        irsc_util.te \
        mediaserver.te \
@@ -137,6 +143,7 @@ BOARD_SEPOLICY_UNION += \
        sensors.te \
        ssr.te \
        surfaceflinger.te \
+       system_app.te \
        system_server.te \
        tee.te \
        thermald.te \
@@ -153,10 +160,19 @@ HAVE_ADRENO_SOURCE:= false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
-TARGET_TOUCHBOOST_FREQUENCY:= 1200
+# QCOM PowerHAL
+TARGET_POWERHAL_VARIANT := qcom
 
 USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 USE_DEVICE_SPECIFIC_CAMERA:= true
+
+# Recovery
+RECOVERY_FSTAB_VERSION := 2
+BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+
+# Hardware
+BOARD_HARDWARE_CLASS := device/lge/hammerhead/cmhw
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
 
