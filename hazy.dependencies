@@ -1,5 +1,17 @@
 [
-  {
+ {
+    "remote": "github",
+    "repository": "HazyTeam/android_kernel_lge_hammerhead",
+    "target_path": "kernel/lge/hammerhead",
+    "revision": "hazypop"
+ },
+ {
+    "remote": "github",
+    "repository": "crdroidandroid/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "revision": "cm-12.0"
+ },
+ {
     "remote": "github",
     "repository": "TheMuppets/proprietary_vendor_lge",
     "target_path": "vendor/lge",
