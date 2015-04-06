@@ -23,7 +23,7 @@ BUILD=937116
 DEVICE=hammerhead
 PRODUCT=hammerhead
 VERSION=kot49h
-#SRCPREFIX=signed-
+SRCPREFIX=signed-
 BOOTLOADER=hhz11k
 RADIO=m8974a-1.0.25.0.23
 source ../../../common/generate-factory-images-common.sh
