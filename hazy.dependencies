@@ -1,10 +1,12 @@
 [
  {
-   "repository": "android_kernel_lge_hammerhead",
-   "target_path": "kernel/lge/hammerhead"
+   "repository": "CyanogenMod/android_kernel_lge_hammerhead",
+   "target_path": "kernel/lge/hammerhead",
+   "branch": "cm-12.1"
  },
  {
-   "repository": "android_device_qcom_common",
-   "target_path": "device/qcom/common"
+   "repository": "CyanogenMod/android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "branch": "cm-12.1"
  }
 ]
